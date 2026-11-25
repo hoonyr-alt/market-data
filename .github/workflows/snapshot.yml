@@ -1,0 +1,41 @@
+# 공개 시장 지표 스냅숏 — 미국 장 마감 직후 모아 latest.json으로 커밋한다.
+name: snapshot
+
+on:
+  schedule:
+    - cron: "35 21 * * 1-5"   # 06:35 KST(화~토) — 미국 정규장 마감 뒤
+    - cron: "5 22 * * 1-5"    # 07:05 KST 재시도
+  workflow_dispatch:
+  push:
+    paths:
+      - "fetch_market.py"
+      - ".github/workflows/snapshot.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pypdf
+      - name: 수집
+        run: |
+          [ -f latest.json ] && cp latest.json /tmp/prev.json || echo '{}' > /tmp/prev.json
+          python3 fetch_market.py latest.json /tmp/prev.json
+          cat latest.json
+      - name: 커밋
+        run: |
+          git add latest.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="snapshot bot" -c user.email="actions@users.noreply.github.com" commit -q -m "snapshot $(date -u +%FT%TZ)"
+          git push -q
