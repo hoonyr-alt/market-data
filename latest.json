@@ -1,10 +1,10 @@
 {
- "generated_at": "2026-11-26 13:06 KST",
+ "generated_at": "2026-11-27 12:43 KST",
  "values": {
   "prices": {
    "MU": 601.25,
-   "kospi": 4697.51,
-   "kospi200": 723.81
+   "kospi": 4711.21,
+   "kospi200": 727.08
   },
   "ndx_closes": [
    26517.05,
@@ -60,14 +60,14 @@
    7201.09,
    7182.78
   ],
-  "vix": 28.29,
-  "vix_prev": 26.36,
+  "vix": 26.8,
+  "vix_prev": 28.29,
   "us10y": 4.85,
-  "dxy": 103.83,
+  "dxy": 103.67,
   "cnn_fg": {
-   "now": 17,
-   "prev": 17,
-   "week": 30
+   "now": 15,
+   "prev": 15,
+   "week": 16
   },
   "putcall": "극단적 공포",
   "cape": 39.4,
@@ -78,9 +78,9 @@
    "next_fomc": "2026-12-09",
    "implied_bp": 27
   },
-  "kospi_prev": 5006.03,
-  "kospi_change_pct": -6.16,
-  "foreign_net_buy": -18193.0,
+  "kospi_prev": 4697.51,
+  "kospi_change_pct": 0.29,
+  "foreign_net_buy": -880.0,
   "credit_trn": 25.88,
   "credit_trn_prev": 25.94,
   "forced_liq_eok": 137
@@ -88,20 +88,20 @@
  "asof": {
   "ndx_closes": "2026-11-25",
   "spx_closes": "2026-11-25",
-  "vix": "2026-11-25",
+  "vix": "2026-11-26",
   "us10y": "2026-11-25",
-  "dxy": "2026-11-25",
+  "dxy": "2026-11-26",
   "prices.MU": "2026-11-25",
-  "cnn_fg": "2026-11-25",
-  "putcall": "2026-11-25",
+  "cnn_fg": "2026-11-26",
+  "putcall": "2026-11-26",
   "cape": "2026-11",
   "fwd_pe": "2026-11-20",
   "fed": "2026-11-24",
-  "prices.kospi": "2026-11-25",
-  "kospi_prev": "2026-11-25",
-  "kospi_change_pct": "2026-11-25",
-  "foreign_net_buy": "2026-11-25",
-  "prices.kospi200": "2026-11-25",
+  "prices.kospi": "2026-11-26",
+  "kospi_prev": "2026-11-26",
+  "kospi_change_pct": "2026-11-26",
+  "foreign_net_buy": "2026-11-26",
+  "prices.kospi200": "2026-11-26",
   "credit_trn": "2026-11-24",
   "forced_liq_eok": "2026-11-24"
  },
@@ -118,8 +118,11 @@
   "fwd_pe": "factset_pdf",
   "fed": "newyorkfed+federalreserve",
   "kospi": "naver",
-  "credit_trn": "kofia",
-  "forced_liq_eok": "kofia"
+  "credit_trn": "이전 실행",
+  "forced_liq_eok": "이전 실행"
  },
- "failed": []
+ "failed": [
+  "credit_trn (kofia: JSONDecodeError)",
+  "forced_liq_eok (kofia: JSONDecodeError)"
+ ]
 }
