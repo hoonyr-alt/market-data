@@ -1,20 +1,19 @@
 {
- "generated_at": "2026-11-27 13:09 KST",
+ "generated_at": "2026-11-28 12:27 KST",
  "values": {
   "prices": {
-   "MU": 601.25,
-   "kospi": 4711.21,
-   "kospi200": 727.08
+   "MU": 646.95,
+   "kospi": 4915.68,
+   "kospi200": 758.51
   },
   "ndx_closes": [
-   26517.05,
    25028.98,
    26746.1,
    26214.17,
-   26046.9
+   26046.9,
+   26726.39
   ],
   "spx_closes": [
-   7704.13,
    7743.41,
    7683.69,
    7670.84,
@@ -58,12 +57,13 @@
    6910.39,
    7237.17,
    7201.09,
-   7182.78
+   7182.78,
+   7297.49
   ],
-  "vix": 26.8,
-  "vix_prev": 28.29,
-  "us10y": 4.85,
-  "dxy": 103.72,
+  "vix": 23.81,
+  "vix_prev": 26.8,
+  "us10y": 4.94,
+  "dxy": 104.01,
   "cnn_fg": {
    "now": 15,
    "prev": 15,
@@ -76,32 +76,32 @@
    "target": "3.75~4.00",
    "effr": 3.88,
    "next_fomc": "2026-12-09",
-   "implied_bp": 27
+   "implied_bp": 26
   },
-  "kospi_prev": 4697.51,
-  "kospi_change_pct": 0.29,
-  "foreign_net_buy": -880.0,
+  "kospi_prev": 4711.21,
+  "kospi_change_pct": 4.34,
+  "foreign_net_buy": 11625.0,
   "credit_trn": 25.88,
   "credit_trn_prev": 25.94,
   "forced_liq_eok": 137
  },
  "asof": {
-  "ndx_closes": "2026-11-25",
-  "spx_closes": "2026-11-25",
-  "vix": "2026-11-26",
-  "us10y": "2026-11-25",
-  "dxy": "2026-11-26",
-  "prices.MU": "2026-11-25",
-  "cnn_fg": "2026-11-26",
-  "putcall": "2026-11-26",
+  "ndx_closes": "2026-11-27",
+  "spx_closes": "2026-11-27",
+  "vix": "2026-11-27",
+  "us10y": "2026-11-27",
+  "dxy": "2026-11-27",
+  "prices.MU": "2026-11-27",
+  "cnn_fg": "2026-11-27",
+  "putcall": "2026-11-27",
   "cape": "2026-11",
   "fwd_pe": "2026-11-20",
-  "fed": "2026-11-24",
-  "prices.kospi": "2026-11-26",
-  "kospi_prev": "2026-11-26",
-  "kospi_change_pct": "2026-11-26",
-  "foreign_net_buy": "2026-11-26",
-  "prices.kospi200": "2026-11-26",
+  "fed": "2026-11-25",
+  "prices.kospi": "2026-11-27",
+  "kospi_prev": "2026-11-27",
+  "kospi_change_pct": "2026-11-27",
+  "foreign_net_buy": "2026-11-27",
+  "prices.kospi200": "2026-11-27",
   "credit_trn": "2026-11-24",
   "forced_liq_eok": "2026-11-24"
  },
@@ -122,7 +122,7 @@
   "forced_liq_eok": "이전 실행"
  },
  "failed": [
-  "credit_trn (kofia: JSONDecodeError)",
-  "forced_liq_eok (kofia: JSONDecodeError)"
+  "credit_trn (kofia: URLError)",
+  "forced_liq_eok (kofia: URLError)"
  ]
 }
